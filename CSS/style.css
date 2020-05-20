@@ -1055,6 +1055,7 @@ body {
     margin-top: 47px;
     max-width: 300px;
     margin-bottom: 20px;
+    margin-left: 75px;
   }
 }
 
@@ -1563,9 +1564,7 @@ body {
   }
   
   .footer {
-    display: flex;
     margin-top: 100px;
-    width: 100%;
     max-width: 1140px;
   }
   
@@ -1632,12 +1631,13 @@ body {
   }
   
   .copyright {
+    max-width: 1140px;
+    display: flex;
     font-size: 14px;
     color: #999999;
     margin-top: 47px;
     margin-bottom: 20px;
-    width: 1140px;
-    display: flex;
+    margin-left: 105px;
   }
   
 }
