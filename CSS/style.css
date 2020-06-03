@@ -1478,9 +1478,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 900;
-    padding-bottom: 220px;
-    margin-bottom: -264px;
+    z-index: 10;
   }
   
   .planned-block {
@@ -1503,13 +1501,25 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #dbcbde;
-    padding-top: 220px;
-    margin-top: -264px;
+    position: relative;
   }
   
+  .production::before {
+    content: "";
+    display: block;
+    position: absolute;
+    margin: 0 auto;
+    bottom: 370px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 1540px;
+    background-color: #dbcbde;
+  }
+
   .production-block {
     max-width: 1140px;
+    z-index: 900;
   }
   
   .production-content {
@@ -1539,7 +1549,7 @@ body {
   .contacts {
     width: 100%;
     max-width: 1140px;
-    padding-bottom: 100px;
+    padding-bottom: 120px;
     background-color: #ffffff;
   }
   
